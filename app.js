@@ -1,5 +1,5 @@
 // import functions
-import { add, subtract, multiply, divide } from './calculations.js';
+import { add, subtract, multiply, divide, intDivide } from './calculations.js';
 // console.log(add(50, 50));
 // reference needed DOM elements
 
@@ -30,6 +30,13 @@ const divideNumber1 = document.getElementById('divide-number-1');
 const divideNumber2 = document.getElementById('divide-number-2');
 const divideButton = document.getElementById('divide-button');
 const divideAnswer = document.getElementById('divide-answer');
+
+
+// Int - Divide DOM
+const intDivideNumber1 = document.getElementById('int-divide-number-1');
+const intDivideNumber2 = document.getElementById('int-divide-number-2');
+const intDivideButton = document.getElementById('int-divide-button');
+const intDivideAnswer = document.getElementById('int-divide-answer');
 
 // set event listeners 
     // get user input(s)
@@ -82,6 +89,17 @@ divideButton.addEventListener('click', () => {
     const sum = divide(num1, num2);
 
     divideAnswer.textContent = sum;
+
+});
+    // Int - Divide event Listener 
+intDivideButton.addEventListener('click', () => {
+    const num1 = +intDivideNumber1.value;
+    const num2 = +intDivideNumber2.value;
+
+
+    const sum = intDivide(num1, num2);
+
+    intDivideAnswer.textContent = sum;
 
 });
 

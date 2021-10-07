@@ -8,6 +8,8 @@ body {
 
 main {
     padding: 30px;
+    background-color: cornsilk;
+
 }
 
 header {
@@ -32,4 +34,13 @@ h1 {
 footer {
     background-color: #FAF0EA;
     padding: 10px;
+}
+
+
+section {
+    margin: 1rem;
+}
+
+span {
+    margin-left: 0.5rem;
 }
